@@ -1,0 +1,340 @@
+img {
+    width: 200px; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    list-style-type: none;
+    margin: .25em;
+    background-color: #000000; 
+    border: 3px solid #ffffff; 
+    border-radius: 20px; 
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+}
+
+.gallery-heading {
+    font-size: 3em;
+    text-align: center;
+    margin: 0.5em 0 1em 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.25em 0.5em;
+    border: 3px solid; /* we’ll apply gradient with border-image */
+    border-radius: 20px;
+    color: transparent; /* for text gradient */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Gradient border */
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+.gallery-header {
+    grid-column: 1 / -1;   /* span all columns of main grid */
+    text-align: center;     /* center text */
+}
+
+
+.address ul li {
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4983ff;
+}
+
+ul li {
+    margin-bottom: 5px; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(225, 182, 211);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    grid-column: 1 / -1;
+    color: white;
+    padding: 2em;
+    border: 3px solid #3f3f3f; 
+    border-radius: 3px; 
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    grid-column: 1 / -1;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: .5em;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 3em;
+    padding: 3em 1.5em 3em 1.5em;
+    background-color:#000000;
+}
+
+.navvy {
+    display: flex;               /* make nav a flex container */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* vertically center if nav has height */
+    font-size: 1.5em;
+    line-height: 1.75em;
+    color: #4983ff;
+    border-radius: 1em;
+    padding: 10px 0;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+                 'Lucida Sans', Arial, sans-serif;         
+}
+
+.navvy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;               /* horizontal list items */
+    gap: 2em;                    /* spacing between links */
+}
+
+.navvy ul li a {
+    text-decoration: none;
+    color: rgb(104, 40, 207);
+    transition: color 0.3s;
+}
+
+.navvy ul li:hover a {
+    color: rgb(0, 251, 255);
+    text-decoration: underline;
+}
+
+
+nav.bio {
+    background-image: url("../images/koala.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #3f3f3f; 
+    border-radius: 3px; 
+    min-height: 100px;   
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+                 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.bio ul li {
+    line-height: 3;
+}
+
+.author-info p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px; 
+    background-color: #4983ff;
+    margin-bottom: 1em; 
+}
+
+table caption {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: crimson; 
+    text-align: center;
+    padding-bottom: 1em; 
+}
+
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.staff {
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(225, 182, 211);
+    border: 1px solid #c5e3ff;
+}
+
+.author-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    float: right;
+    margin-right: 1em;
+}
+
+.author-info {
+    background-color: rgb(225, 182, 211);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: right;
+    background-color:#ffffff;
+    text-align: left;
+    padding: 0 0 3em 3em; 
+    font-size: 1.25em;
+}
+
+
+.author-info h2 {
+    color: red;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.author-info p {
+    font-size: 1.05em;
+    margin: 0;
+    line-height: 2.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bio-link {
+    color: rgb(31, 52, 243);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#bio-link:hover {
+    color: rgb(226, 255, 62);
+    text-decoration: underline;
+}
+
+#bio-link:visited {
+    color: rgb(148, 104, 253);
+}
+
+.staff ul li {
+    font-size: 1.5em;
+}
+
+.staff-list {
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.staff a:hover {
+    color: yellow;
+}
+
+caption {
+    background-color: white;
+}
+
+.bio li:nth-child(1) a {
+    font-weight: bold;
+    color: red; 
+}
+
+.rainbow {
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;          /* fill parent column */
+    grid-column: 1 / -1;  /* span all columns in the main grid */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.gallery img {
+    width: 100%;        /* fill each grid cell */
+    height: auto;       /* keep aspect ratio */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox overlay */
+.lightbox {
+    display: none;             /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9); /* dark semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: 90vw;   /* max width 90% of viewport */
+    max-height: 90vh;  /* max height 90% of viewport */
+    width: auto;        /* maintain aspect ratio */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive: 1 column on small screens */
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
