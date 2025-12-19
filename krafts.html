@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Koality Krafts</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const colors = [
+                "red", "orange", "yellow", "green",
+                "blue", "indigo", "violet"
+            ];
+        
+            const heading = document.querySelector(".rainbow-text");
+            const text = heading.textContent;
+            heading.textContent = "";
+        
+            [...text].forEach((char, i) => {
+                const span = document.createElement("span");
+                span.textContent = char === " " ? "\u00A0" : char;
+                span.style.color = colors[i % colors.length];
+                heading.appendChild(span);
+            });
+        });
+    </script>        
+        
+</head>
+
+<body>
+    <header>
+        <h1 class="rainbow-text">Koality Krafts</h1>
+        <nav class ="navvy">
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="bio">
+        </nav>
+
+        <div class="author-info">
+            <h2>Who we are!</h2>
+            <p>We are the most dedicated team of carpet renewal experts here to serve you.</p>
+            <p>Located at the heart of Waynesvegas. We serve anyone in the County of Albenova!</p>
+            <p>We have been your trusted carpet renewal experts for <b>25</b> years!</p>
+            <p> Please contact us as no job is too small or big for us. We'd <b>love</b> to help.</p>
+        </div>
+
+        <div class="staff">
+            <h1>Meet the Artist</h1>
+            <ul class="staff-list">
+                <li>
+                    <a href="kaitlyn.html"><p>Meet Kaitlyn!</p></a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Aaron.G
+    </footer>
+
+</body>
+
+</html>
