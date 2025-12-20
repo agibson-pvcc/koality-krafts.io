@@ -23,20 +23,24 @@ h1 {
 .gallery-heading {
     font-size: 3em;
     text-align: center;
-    margin: 0.5em 0 1em 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0.25em 0.5em;
-    border: 3px solid; /* gradient with border-image */
+    margin: 0.5em auto 1em;
+    font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+
+    padding: 0.25em 0.75em;     /* NOW VISIBLE */
+    border: 3px solid;
     border-radius: 20px;
-    color: transparent; /* for text gradient */
+
+    /* Gradient border */
+    border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+
+    display: inline-block;
+}
+
+.rainbow-text {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
     background-clip: text;
-
-    /* Gradient border */
-    border-image-slice: 1;
-    border-width: 3px;
-    border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: transparent;
 }
 
 
